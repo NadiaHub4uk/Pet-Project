@@ -1,0 +1,297 @@
+{
+	"id": "33bbd39e-4909-41ea-8de7-f177e5805c54",
+	"name": "Petstore",
+	"timestamp": "2025-08-07T15:38:00.339Z",
+	"collection_id": "25026799-dcef907a-bbb2-4183-8aee-151b91928a8d",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 24,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-08-07T15:37:56.034Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "94dfcaad-3290-4352-8c4a-a6be36e73751",
+			"name": "Verify that allows creating a User",
+			"url": "https://petstore.swagger.io/v2/user",
+			"time": 666,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has required fields: code, type, and message": true,
+				"Code is a non-negative integer": true,
+				"Type must be a string": true,
+				"Message must be a string and not empty": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has required fields: code, type, and message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Code is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Type must be a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message must be a string and not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				666
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has required fields: code, type, and message": true,
+					"Code is a non-negative integer": true,
+					"Type must be a string": true,
+					"Message must be a string and not empty": true
+				}
+			]
+		},
+		{
+			"id": "00a4876a-001c-47a1-80f9-c97078ab136d",
+			"name": "Verify that allows login as a User",
+			"url": "https://petstore.swagger.io/v2/user/login?username=Zefirka&password=123456",
+			"time": 206,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has required fields: code, type, and message": true,
+				"Code is a non-negative integer": true,
+				"Message is a string and can be empty": true,
+				"Response time is less than 200ms": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has required fields: code, type, and message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Code is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is a string and can be empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				206
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has required fields: code, type, and message": true,
+					"Code is a non-negative integer": true,
+					"Message is a string and can be empty": true,
+					"Response time is less than 200ms": false
+				}
+			]
+		},
+		{
+			"id": "0f14a1af-9064-417d-bfae-7f82d1f8c734",
+			"name": "Verify that allows adding a new Pet",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": 133,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has required fields": true,
+				"Category name is a non-empty string": true,
+				"PhotoUrls is an array that contains at least one element": true,
+				"Status is one of the allowed values": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Category name is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PhotoUrls is an array that contains at least one element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status is one of the allowed values": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				133
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has required fields": true,
+					"Category name is a non-empty string": true,
+					"PhotoUrls is an array that contains at least one element": true,
+					"Status is one of the allowed values": true
+				}
+			]
+		},
+		{
+			"id": "40f6254f-60bd-4832-9c05-124e7d4efb9c",
+			"name": "Verify that allows updating Pet’s name and status",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": 211,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"The category object must be present": true,
+				"The name must be a non-empty string": true,
+				"The photoUrls array must contain at least one valid URL": true,
+				"Status is one of the predefined valid values": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The category object must be present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The name must be a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The photoUrls array must contain at least one valid URL": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status is one of the predefined valid values": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				211
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"The category object must be present": true,
+					"The name must be a non-empty string": true,
+					"The photoUrls array must contain at least one valid URL": true,
+					"Status is one of the predefined valid values": true
+				}
+			]
+		},
+		{
+			"id": "7fb43a80-848e-445f-b7a5-e50c544a2c86",
+			"name": "Verify that allows deleting Pet",
+			"url": "https://petstore.swagger.io/v2/pet/2",
+			"time": 154,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has required fields: code, type, and message": true,
+				"Code is a non-negative integer": true,
+				"Message should be a string": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has required fields: code, type, and message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Code is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message should be a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				154
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has required fields: code, type, and message": true,
+					"Code is a non-negative integer": true,
+					"Message should be a string": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1370,
+	"collection": {
+		"requests": [
+			{
+				"id": "94dfcaad-3290-4352-8c4a-a6be36e73751",
+				"method": "POST"
+			},
+			{
+				"id": "00a4876a-001c-47a1-80f9-c97078ab136d",
+				"method": "GET"
+			},
+			{
+				"id": "0f14a1af-9064-417d-bfae-7f82d1f8c734",
+				"method": "POST"
+			},
+			{
+				"id": "40f6254f-60bd-4832-9c05-124e7d4efb9c",
+				"method": "PUT"
+			},
+			{
+				"id": "7fb43a80-848e-445f-b7a5-e50c544a2c86",
+				"method": "DELETE"
+			}
+		]
+	}
+}
